@@ -5,26 +5,27 @@ import classes from './AvailableDesserts.module.css';
 const DUMMY_DESSERTS = [
   {
     id: 'm1',
-    name: 'Sushi',
-    description: 'Finest fish and veggies',
+    name: 'LPR Pie ',
+    description: 'Lemon Pistachio and Raspberry Pie',
     price: 22.99,
   },
   {
     id: 'm2',
-    name: 'Schnitzel',
-    description: 'A german specialty!',
+    name: 'The pistachio delight',
+    description: 'Pistachio cookies with chocolate and raspberries',
     price: 16.5,
   },
   {
     id: 'm3',
-    name: 'Barbecue Burger',
-    description: 'American, raw, meaty',
+    name: 'Spring clouds',
+    description: 'Pavlova milkshake with citrus fruits',
     price: 12.99,
   },
   {
     id: 'm4',
-    name: 'Green Bowl',
-    description: 'Healthy...and green...',
+    name: 'Numbers cake',
+    description:
+      'Number-shaped cake with diplomat cream, fruit or chocolates to choose from',
     price: 18.99,
   },
 ];
