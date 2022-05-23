@@ -1,5 +1,6 @@
 import { Fragment } from 'react';
 import lemonElGryImg from '../../assets/lemonElGryImg.jpg';
+import HeaderCartButton from './HeaderCartButton';
 import classes from './Header.module.css';
 
 const Header = (props) => {
@@ -7,7 +8,7 @@ const Header = (props) => {
     <Fragment>
       <header className={classes.header}>
         <h1>Love In My Tummy</h1>
-        <button>Cart</button>
+        <HeaderCartButton />
       </header>
       <div className={classes['main-image']}>
         <img src={lemonElGryImg} alt="Lemon El Gry" />
