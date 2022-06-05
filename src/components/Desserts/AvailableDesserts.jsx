@@ -5,12 +5,16 @@ import classes from './AvailableDesserts.module.css';
 
 const AvailableDesserts = () => {
   const [desserts, setDesserts] = useState([]);
+  const [isLoading, setIsLoading] = useState(true);
+  const [httpError, setHttpError] = useState();
 
   useEffect(() => {
     const fetchDesserts = async () => {
       const response = await fetch(
         'https://desser-a46c4-default-rtdb.firebaseio.com/desserts.json'
       );
+
+      if (!response.ok) throw new Error('Something went wrong!');
 
       const responseData = await response.json();
 
@@ -26,10 +30,28 @@ const AvailableDesserts = () => {
       }
 
       setDesserts(loadedDeserts);
+      setIsLoading(false);
     };
 
-    fetchDesserts();
+    fetchDesserts().catch((error) => {
+      setIsLoading(false);
+      setHttpError(error.message);
+    });
   }, []);
+
+  if (isLoading)
+    return (
+      <section className={classes.dessertsLoading}>
+        <p>Loading...</p>
+      </section>
+    );
+
+  if (httpError)
+    return (
+      <section className={classes.dessertsError}>
+        <p>{httpError}</p>
+      </section>
+    );
 
   const dessertsList = desserts.map((dessert) => (
     <DessertItem
