@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/loveInMyTummy/static/css/main.b18f43ef.css",
+    "main.js": "/loveInMyTummy/static/js/main.655a680e.js",
+    "static/media/lemonElGryImg.jpg": "/loveInMyTummy/static/media/lemonElGryImg.7816cc2d258e6d969310.jpg",
+    "index.html": "/loveInMyTummy/index.html",
+    "main.b18f43ef.css.map": "/loveInMyTummy/static/css/main.b18f43ef.css.map",
+    "main.655a680e.js.map": "/loveInMyTummy/static/js/main.655a680e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b18f43ef.css",
+    "static/js/main.655a680e.js"
+  ]
+}
