@@ -26,6 +26,7 @@ const AvailableDesserts = () => {
           name: responseData[key].name,
           description: responseData[key].description,
           price: responseData[key].price,
+          image: responseData[key].image,
         });
       }
 
@@ -60,6 +61,7 @@ const AvailableDesserts = () => {
       name={dessert.name}
       description={dessert.description}
       price={dessert.price}
+      image={dessert.image}
     />
   ));
 

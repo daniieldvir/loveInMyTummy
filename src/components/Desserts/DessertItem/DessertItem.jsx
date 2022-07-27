@@ -14,6 +14,7 @@ const DessertItem = (props) => {
       name: props.name,
       amount: amount,
       price: props.price,
+      image: props.image,
     });
   };
 
@@ -23,7 +24,9 @@ const DessertItem = (props) => {
         <h3>{props.name}</h3>
         <div className={classes.description}>{props.description}</div>
         <div className={classes.price}>{price}</div>
+        <img className={classes.image} src={props.image} alt={props.name} />
       </div>
+
       <div>
         <DessertItemForm id={props.id} onAddToCart={addToCartHandler} />
       </div>

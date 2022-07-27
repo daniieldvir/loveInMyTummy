@@ -20,3 +20,12 @@
   color: #ad5502;
   font-size: 1.25rem;
 }
+
+.image {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+  -webkit-box-shadow: 1px 1px 10px 1px #57565676;
+  box-shadow: 1px 1px 10px 1px #57565676;
+}
